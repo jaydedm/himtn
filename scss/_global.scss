@@ -4,6 +4,9 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 h1,
@@ -53,7 +56,6 @@ p {
   }
 }
 
-
 .attention-box {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -67,7 +69,7 @@ p {
     display: block;
     font-size: 1.2rem;
     font-weight: 800;
-    padding-bottom: 16px
+    padding-bottom: 16px;
   }
   .section-heading-lower {
     display: block;
