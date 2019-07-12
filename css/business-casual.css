@@ -4,34 +4,24 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/LICENSE)
  */
 
-body {
-  font-family: 'Lora';
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.65))), url("../img/bg.jpg");
-  background: linear-gradient(rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
   font-family: 'Raleway';
 }
 
-p {
+body p {
   line-height: 1.75;
 }
 
-.text-faded {
+body .text-faded {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.site-heading {
+body .site-heading {
   margin-top: 5rem;
   margin-bottom: 5rem;
   text-transform: uppercase;
@@ -39,55 +29,70 @@ p {
   font-family: 'Raleway';
 }
 
-.site-heading .site-heading-upper {
+body .site-heading .site-heading-upper {
   display: block;
   font-size: 2rem;
   font-weight: 800;
 }
 
-.site-heading .site-heading-lower {
+body .site-heading .site-heading-lower {
   font-size: 5rem;
   font-weight: 100;
   line-height: 4rem;
 }
 
-.page-section {
+body .page-section {
   margin-top: 5rem;
   margin-bottom: 10rem;
 }
 
 @media (max-width: 400px) {
-  .page-section {
+  body .page-section {
     margin-top: 20rem;
   }
 }
 
-.attention-box {
+body .attention-box {
   margin-top: 0;
   margin-bottom: 2rem;
   border: 1px solid black;
   padding: 1rem;
 }
 
-.section-heading {
+body .section-heading {
   text-transform: uppercase;
 }
 
-.section-heading .section-heading-upper {
+body .section-heading .section-heading-upper {
   display: block;
   font-size: 1.2rem;
   font-weight: 800;
   padding-bottom: 16px;
 }
 
-.section-heading .section-heading-lower {
+body .section-heading .section-heading-lower {
   display: block;
   font-size: 3rem;
   font-weight: 100;
 }
 
-.bg-faded {
+body .bg-faded {
   background-color: rgba(255, 255, 255, 0.85);
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  /* stretch a fixed position to the whole screen */
+  top: 0;
+  height: 100vh;
+  /* fix for mobile browser address bar appearing disappearing */
+  left: 0;
+  right: 0;
+  z-index: -1;
+  /* needed to keep in the background */
+  background: url("../img/bg.jpg") center center;
+  background-size: cover;
 }
 
 #mainNav {
