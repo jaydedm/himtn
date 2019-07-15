@@ -81,11 +81,11 @@
         <div class="row">
           <div class="col-xl-9 mx-auto">
             <div class="cta-inner text-center rounded">
-              <h2 class="section-heading mb-5 open-closed-sign">
+              <h2 class="section-heading mb-5 open-sign">
                 <span class="section-heading-upper">Come On In</span>
                 <span class="section-heading-lower">We're Open</span>
               </h2>
-              <h2 class="section-heading mb-5 open-closed-sign">
+              <h2 class="section-heading mb-5 closed-sign">
                   <span class="section-heading-upper">Sorry</span>
                   <span class="section-heading-lower">We're Closed</span>
                 </h2>
@@ -193,9 +193,13 @@
       console.log('my bool', openTime)
 
     if(openTime){
-      $('.open-closed-sign')
-      .addClass('closed')
+      $('.closed-sign')
+      .addClass('hide')
     } 
+    if(!openTime){
+      $('.open-sign')
+      .addClass('hide')
+    }
 
     console.log()
   </script>
