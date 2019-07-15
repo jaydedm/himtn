@@ -52,6 +52,13 @@ body {
     border: 1px solid black;
     padding: 1rem;
   }
+
+  .link {
+    color: orange;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   
   .section-heading {
     text-transform: uppercase;

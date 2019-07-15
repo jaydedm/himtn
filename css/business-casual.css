@@ -59,6 +59,14 @@ body .attention-box {
   padding: 1rem;
 }
 
+body .link {
+  color: orange;
+}
+
+body .link:hover {
+  cursor: pointer;
+}
+
 body .section-heading {
   text-transform: uppercase;
 }

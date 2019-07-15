@@ -169,10 +169,10 @@
     <footer class="footer text-faded text-center py-5">
         <div class="container">
           <p class="m-0 small">Copyright &copy; Hi-Mountain 2019</p>
-          <a href='https://goo.gl/maps/rtXnGtAuq4fStpGf9' class="m-0 small">
-            40 North Main Street, <br />
+          <p onclick="mapsSelector()" class="m-0 small link">
+            40 North Main Street,<br />
             Kamas, UT 84036
-          </a>
+          </p>
         </div>
       </footer>
 
@@ -201,6 +201,17 @@
       .addClass('hide')
     }
 
-    console.log()
   </script>
+
+<script>
+    function mapsSelector() {
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) || 
+     (navigator.platform.indexOf("iPad") != -1) || 
+     (navigator.platform.indexOf("iPod") != -1))
+    window.open("maps://maps.google.com/maps?daddr=40.643878,-111.280606&amp;ll=");
+else /* else use Google */
+    window.open("https://maps.google.com/maps?daddr=40.643878,-111.280606");
+}
+    </script>
 </html>
