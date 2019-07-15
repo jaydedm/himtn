@@ -189,7 +189,7 @@
       .eq(todaysDate.getDay())
       .addClass('today')
 
-    let openTime = (todaysDate.getUTCHours() < 3 || todaysDate.getUTCHours() >= 14)
+    let openTime = (todaysDate.getDay !== 0 && todaysDate.getUTCHours() < 3 || todaysDate.getUTCHours() >= 14)
       console.log('my bool', openTime)
 
     if(openTime){
