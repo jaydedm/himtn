@@ -11,8 +11,4 @@ cache:
   directories:
     - node_modules
 notifications:
-<<<<<<< HEAD
   email:       false
-=======
-  email:       false
->>>>>>> 0c5c49124d3449a8c938534496f241d5bfc03e5b
