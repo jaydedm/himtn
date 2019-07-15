@@ -2,4 +2,27 @@ fileignoreconfig:
 - filename: package-lock.json
   checksum: 17761129de1898f65b24ccc2a1df6a766c7978a822846ef003d4872612559e09
   ignore_detectors: []
-
+- filename: .travis.yml
+  checksum: 95a6483acda78191c1a246be589d291cb8334b4737206549e5d5912f98f1e83e
+  ignore_detectors: []
+- filename: css/business-casual.css
+  checksum: d0868782ad4e735e40769ef2a18989bf9f580d07c35770bb436327fc06f5f129
+  ignore_detectors: []
+- filename: css/business-casual.min.css
+  checksum: 53bc2bfbf0c6c5f934eff2829d662385e647253306a28ff3d395c9d510066663
+  ignore_detectors: []
+- filename: hours.html
+  checksum: e02675693a0b135d57fbadb3602b8e1e5086cd00436195751646c758e108d503
+  ignore_detectors: []
+- filename: index.html
+  checksum: 968bdf65c9a469d95c58cae39c9626a9c1618114c14ee93b38a3721c3b56921d
+  ignore_detectors: []
+- filename: menu.html
+  checksum: ccc79ff6aca85d42f43a4235855b1b58d7edd03f4449fb3439b791081ef25d7d
+  ignore_detectors: []
+- filename: package-lock.json
+  checksum: 62942c4573554a93083098b0459bb798d0e66f5ecf814d62917bd1e43d1ac668
+  ignore_detectors: []
+- filename: scss/_global.scss
+  checksum: 65f465c6f613253b354b587a354bc550bb10b00a77500e65deed53a33310e375
+  ignore_detectors: []

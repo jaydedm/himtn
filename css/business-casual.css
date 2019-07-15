@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/LICENSE)
  */
 
+<<<<<<< HEAD
 body {
   font-family: 'Lora';
   background: linear-gradient(rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
@@ -33,6 +34,26 @@ p {
 }
 
 .site-heading {
+=======
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: 'Raleway';
+}
+
+body p {
+  line-height: 1.75;
+}
+
+body .text-faded {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+body .site-heading {
+>>>>>>> 0c5c49124d3449a8c938534496f241d5bfc03e5b
   margin-top: 5rem;
   margin-bottom: 5rem;
   text-transform: uppercase;
@@ -40,57 +61,113 @@ p {
   font-family: 'Raleway';
 }
 
+<<<<<<< HEAD
 .site-heading .site-heading-upper {
+=======
+body .site-heading .site-heading-upper {
+>>>>>>> 0c5c49124d3449a8c938534496f241d5bfc03e5b
   display: block;
   font-size: 2rem;
   font-weight: 800;
 }
 
+<<<<<<< HEAD
 .site-heading .site-heading-lower {
+=======
+body .site-heading .site-heading-lower {
+>>>>>>> 0c5c49124d3449a8c938534496f241d5bfc03e5b
   font-size: 5rem;
   font-weight: 100;
   line-height: 4rem;
 }
 
+<<<<<<< HEAD
 .page-section {
+=======
+body .page-section {
+>>>>>>> 0c5c49124d3449a8c938534496f241d5bfc03e5b
   margin-top: 5rem;
   margin-bottom: 10rem;
 }
 
 @media (max-width: 400px) {
+<<<<<<< HEAD
   .page-section {
     margin-top: 20rem;
   }
 }
 
 .attention-box {
+=======
+  body .page-section {
+    margin-top: 19rem;
+  }
+}
+
+body .attention-box {
+>>>>>>> 0c5c49124d3449a8c938534496f241d5bfc03e5b
   margin-top: 0;
   margin-bottom: 2rem;
   border: 1px solid black;
   padding: 1rem;
 }
 
+<<<<<<< HEAD
 .section-heading {
   text-transform: uppercase;
 }
 
 .section-heading .section-heading-upper {
+=======
+body .section-heading {
+  text-transform: uppercase;
+}
+
+body .section-heading .section-heading-upper {
+>>>>>>> 0c5c49124d3449a8c938534496f241d5bfc03e5b
   display: block;
   font-size: 1.2rem;
   font-weight: 800;
   padding-bottom: 16px;
 }
 
+<<<<<<< HEAD
 .section-heading .section-heading-lower {
+=======
+body .section-heading .section-heading-lower {
+>>>>>>> 0c5c49124d3449a8c938534496f241d5bfc03e5b
   display: block;
   font-size: 3rem;
   font-weight: 100;
 }
 
+<<<<<<< HEAD
 .bg-faded {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
+=======
+body .bg-faded {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  /* stretch a fixed position to the whole screen */
+  top: 0;
+  height: 100vh;
+  /* fix for mobile browser address bar appearing disappearing */
+  left: 0;
+  right: 0;
+  z-index: -1;
+  /* needed to keep in the background */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.4))), url("../img/himtnbg.jpg") center center;
+  background: linear-gradient(rgba(47, 23, 15, 0.4)), url("../img/himtnbg.jpg") center center;
+  background-size: cover;
+}
+
+>>>>>>> 0c5c49124d3449a8c938534496f241d5bfc03e5b
 #mainNav {
   background-color: rgba(47, 23, 15, 0.9);
   font-family: 'Raleway';
