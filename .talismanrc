@@ -12,13 +12,13 @@ fileignoreconfig:
   checksum: 53bc2bfbf0c6c5f934eff2829d662385e647253306a28ff3d395c9d510066663
   ignore_detectors: []
 - filename: hours.html
-  checksum: e02675693a0b135d57fbadb3602b8e1e5086cd00436195751646c758e108d503
+  checksum: 8cfc69c3f2002a8bfcfad3b93feafbf9d68d04c0a73686f5f4e6a19cc0e31f60
   ignore_detectors: []
 - filename: index.html
-  checksum: 968bdf65c9a469d95c58cae39c9626a9c1618114c14ee93b38a3721c3b56921d
+  checksum: 209f3bfd1ddd0e3be1eb4cd1966f4baf14c94c8ef6f212a8ca421072d9def199
   ignore_detectors: []
 - filename: menu.html
-  checksum: ccc79ff6aca85d42f43a4235855b1b58d7edd03f4449fb3439b791081ef25d7d
+  checksum: e37463bfdec20e223791182929dbe74942ba908d6882d698ac533a3d3bc4c5a5
   ignore_detectors: []
 - filename: package-lock.json
   checksum: 62942c4573554a93083098b0459bb798d0e66f5ecf814d62917bd1e43d1ac668
