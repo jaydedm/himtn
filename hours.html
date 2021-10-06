@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141665322-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-141665322-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-141665322-2');
-</script>
+      gtag("config", "UA-141665322-2");
+    </script>
 
     <meta charset="utf-8" />
     <meta
@@ -48,7 +53,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
         <a
-          class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none"
+          class="
+            navbar-brand
+            text-uppercase text-expanded
+            font-weight-bold
+            d-lg-none
+          "
           href="index.html"
           >Hi-Mountain</a
         >
@@ -72,7 +82,10 @@
               </a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="menu"
+              <a
+                class="nav-link text-uppercase text-expanded"
+                href="img/Menu/himtnmenu.pdf"
+                download=""
                 >Menu</a
               >
             </li>
@@ -99,9 +112,12 @@
                 <span class="section-heading-upper">Sorry</span>
                 <span class="section-heading-lower">We're Closed</span>
               </h2>
-                <div class="container attention-box">
-                    <i>Please note our COVID-19 hours -- The Dining Room is now open!</i>
-                  </div>
+              <div class="container attention-box">
+                <i
+                  >Please note our COVID-19 hours -- The Dining Room is now
+                  open!</i
+                >
+              </div>
               <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Sunday
@@ -133,7 +149,6 @@
                 </li>
               </ul>
               <p class="address mb-5">
-
                 <em>
                   <strong>40 North Main Street</strong>
                   <br />
@@ -181,14 +196,14 @@
     </section> -->
 
     <footer class="footer text-faded text-center py-5">
-        <div class="container">
-          <p class="m-0 small">Copyright &copy; Hi-Mountain 2019</p>
-          <p onclick="mapsSelector()" class="m-0 small link">
-            40 North Main Street,<br />
-            Kamas, UT 84036
-          </p>
-        </div>
-      </footer>
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; Hi-Mountain 2019</p>
+        <p onclick="mapsSelector()" class="m-0 small link">
+          40 North Main Street,<br />
+          Kamas, UT 84036
+        </p>
+      </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -197,35 +212,36 @@
 
   <!-- Script to highlight the active date in the hours list -->
   <script>
-    let todaysDate = new Date()
+    let todaysDate = new Date();
 
-    $('.list-hours li')
-      .eq(todaysDate.getDay())
-      .addClass('today')
+    $(".list-hours li").eq(todaysDate.getDay()).addClass("today");
 
-    let openTime = (todaysDate.getDay !== 0 && todaysDate.getUTCHours() < 3 || todaysDate.getUTCHours() >= 14)
-      console.log('my bool', openTime)
+    let openTime =
+      (todaysDate.getDay !== 0 && todaysDate.getUTCHours() < 3) ||
+      todaysDate.getUTCHours() >= 14;
+    console.log("my bool", openTime);
 
-    if(openTime){
-      $('.closed-sign')
-      .addClass('hide')
-    } 
-    if(!openTime){
-      $('.open-sign')
-      .addClass('hide')
+    if (openTime) {
+      $(".closed-sign").addClass("hide");
     }
-
+    if (!openTime) {
+      $(".open-sign").addClass("hide");
+    }
   </script>
 
-<script>
+  <script>
     function mapsSelector() {
-  if /* if we're on iOS, open in Apple Maps */
-    ((navigator.platform.indexOf("iPhone") != -1) || 
-     (navigator.platform.indexOf("iPad") != -1) || 
-     (navigator.platform.indexOf("iPod") != -1))
-    window.open("maps://maps.google.com/maps?daddr=40.643878,-111.280606&amp;ll=");
-else /* else use Google */
-    window.open("https://maps.google.com/maps?daddr=40.643878,-111.280606");
-}
-    </script>
+      if (
+        /* if we're on iOS, open in Apple Maps */
+        navigator.platform.indexOf("iPhone") != -1 ||
+        navigator.platform.indexOf("iPad") != -1 ||
+        navigator.platform.indexOf("iPod") != -1
+      )
+        window.open(
+          "maps://maps.google.com/maps?daddr=40.643878,-111.280606&amp;ll="
+        );
+      /* else use Google */ else
+        window.open("https://maps.google.com/maps?daddr=40.643878,-111.280606");
+    }
+  </script>
 </html>

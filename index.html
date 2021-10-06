@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141665322-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-141665322-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-141665322-2');
-</script>
+      gtag("config", "UA-141665322-2");
+    </script>
 
     <meta charset="utf-8" />
     <meta
@@ -48,7 +53,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
         <a
-          class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none"
+          class="
+            navbar-brand
+            text-uppercase text-expanded
+            font-weight-bold
+            d-lg-none
+          "
           href="index.html"
           >Hi-Mountain</a
         >
@@ -72,7 +82,10 @@
               </a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="menu"
+              <a
+                class="nav-link text-uppercase text-expanded"
+                href="img/Menu/himtnmenu.pdf"
+                download
                 >Menu</a
               >
             </li>
@@ -103,39 +116,39 @@
               >
             </h2>
             <div class="page-section clearfix container attention-box">
-              <i><span
-                >Something we all grew up with. Something we can't always
-                find.</span
-              >
-              <br />
-              <span
-                >In a world of strip malls and fast food chains, we like being
-                different.</span
-              >
+              <i
+                ><span
+                  >Something we all grew up with. Something we can't always
+                  find.</span
+                >
+                <br />
+                <span
+                  >In a world of strip malls and fast food chains, we like being
+                  different.</span
+                >
               </i>
             </div>
             <p class="mb-3" style="text-align: left">
               At Hi-Mountain, we take pride in our traditions. The food you
-                loved as a child tastes just as good today. We Strive to give
-                you quality food paired with exceptional service.
+              loved as a child tastes just as good today. We Strive to give you
+              quality food paired with exceptional service.
               <br />
               <br />
 
-                Built in 1918 as a confectionary, the store has had very few
-                changes since it first opened its doors. Although the pharmacy
-                is now closed, we are still - and most likely will be for years
-                to come - fondly known as <strong><i>"The Drug Store."</i></strong>
+              Built in 1918 as a confectionary, the store has had very few
+              changes since it first opened its doors. Although the pharmacy is
+              now closed, we are still - and most likely will be for years to
+              come - fondly known as <strong><i>"The Drug Store."</i></strong>
 
               <br />
               <br />
-    
-                So, belly up to the bar, enjoy some down-home service, and take
-                a walk down memory lane. Before you go, peek below the
-                old-fashioned ice cream counter at the original tile mural, and
-                help yourself to a heaping serving of nostalgia. Let us help you
-                create special memories with your loved ones that will carry on
-                through the years.
-     
+
+              So, belly up to the bar, enjoy some down-home service, and take a
+              walk down memory lane. Before you go, peek below the old-fashioned
+              ice cream counter at the original tile mural, and help yourself to
+              a heaping serving of nostalgia. Let us help you create special
+              memories with your loved ones that will carry on through the
+              years.
             </p>
             <div class="intro-button mx-auto">
               <a class="btn btn-primary btn-xl" href="hours.html"
@@ -183,15 +196,21 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
-    function mapsSelector() {
-  if /* if we're on iOS, open in Apple Maps */
-    ((navigator.platform.indexOf("iPhone") != -1) || 
-     (navigator.platform.indexOf("iPad") != -1) || 
-     (navigator.platform.indexOf("iPod") != -1))
-    window.open("maps://maps.google.com/maps?daddr=40.643878,-111.280606&amp;ll=");
-else /* else use Google */
-    window.open("https://maps.google.com/maps?daddr=40.643878,-111.280606");
-}
+      function mapsSelector() {
+        if (
+          /* if we're on iOS, open in Apple Maps */
+          navigator.platform.indexOf("iPhone") != -1 ||
+          navigator.platform.indexOf("iPad") != -1 ||
+          navigator.platform.indexOf("iPod") != -1
+        )
+          window.open(
+            "maps://maps.google.com/maps?daddr=40.643878,-111.280606&amp;ll="
+          );
+        /* else use Google */ else
+          window.open(
+            "https://maps.google.com/maps?daddr=40.643878,-111.280606"
+          );
+      }
     </script>
   </body>
 </html>
