@@ -125,11 +125,11 @@
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Monday
-                  <span class="ml-auto">11:00 AM to 7:00 PM</span>
+                  <span class="ml-auto">11:00 AM to 4:00 PM</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Tuesday
-                  <span class="ml-auto">11:00 AM to 7:00 PM</span>
+                  <span class="ml-auto">11:00 AM to 4:00 PM</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Wednesday
@@ -213,6 +213,7 @@
   <!-- Script to highlight the active date in the hours list -->
   <script>
     let todaysDate = new Date();
+    console.log(todaysDate);
 
     $(".list-hours li").eq(todaysDate.getDay()).addClass("today");
 
