@@ -118,7 +118,7 @@
               </h2>
               <div class="container attention-box">
                 <i
-                  >Please note our Summer Hours -- In effect until Labor Day!</i
+                  >Please note we we are on Fall Break for deep cleaning until October 26th!!</i
                 >
               </div>
               <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
@@ -223,14 +223,14 @@
     let openTime =
       (todaysDate.getDay !== 0 && todaysDate.getUTCHours() < 3) ||
       todaysDate.getUTCHours() >= 14;
-    console.log("my bool", openTime);
 
-    if (openTime) {
-      $(".closed-sign").addClass("hide");
-    }
-    if (!openTime) {
       $(".open-sign").addClass("hide");
-    }
+    // if (openTime) {
+    //   $(".closed-sign").addClass("hide");
+    // }
+    // if (!openTime) {
+    //   $(".open-sign").addClass("hide");
+    // }
   </script>
 
   <script>
