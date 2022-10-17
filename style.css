@@ -1,0 +1,9 @@
+.banner{
+    background-color: beige;
+    height: 13vh;
+    padding: 5vh 0;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
