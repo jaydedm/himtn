@@ -1,9 +1,11 @@
 .banner{
     background-color: beige;
-    height: 13vh;
+    height: fit-content;
     padding: 5vh 0;
     text-align: center;
     position: fixed;
     z-index: 1;
     width: 100%;
+    top: 8%;
+    opacity: 0.8;
 }
