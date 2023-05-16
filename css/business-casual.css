@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Business Casual v5.0.8 (https://startbootstrap.com/template-overviews/business-casual)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2023 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/LICENSE)
  */
 
@@ -10,95 +10,78 @@ body h3,
 body h4,
 body h5,
 body h6 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
-
 body p {
   line-height: 1.75;
 }
-
 body .text-faded {
   color: rgba(255, 255, 255, 0.3);
 }
-
 body .site-heading {
   margin-top: 5rem;
   margin-bottom: 5rem;
   text-transform: uppercase;
   line-height: 1;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
-
 body .site-heading .site-heading-upper {
   display: block;
   font-size: 2rem;
   font-weight: 800;
 }
-
 body .site-heading .site-heading-lower {
   font-size: 5rem;
   font-weight: 100;
   line-height: 4rem;
 }
-
 body .page-section {
   margin-top: 5rem;
   margin-bottom: 10rem;
 }
-
 @media (max-width: 400px) {
   body .page-section {
     margin-top: 19rem;
   }
 }
-
 body .attention-box {
   margin-top: 0;
   margin-bottom: 2rem;
   border: 1px solid black;
   padding: 1rem;
 }
-
 body .link {
   color: orange;
 }
-
 body .link:hover {
   cursor: pointer;
 }
-
 body .section-heading {
   text-transform: uppercase;
 }
-
 body .section-heading .section-heading-upper {
   display: block;
   font-size: 1.2rem;
   font-weight: 800;
   padding-bottom: 16px;
 }
-
 body .section-heading .section-heading-lower {
   display: block;
   font-size: 3rem;
   font-weight: 100;
 }
-
 body .bg-faded {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
 body::after {
-  content: '';
-  position: fixed;
-  /* stretch a fixed position to the whole screen */
+  content: "";
+  position: fixed; /* stretch a fixed position to the whole screen */
   top: 0;
-  height: 100vh;
-  /* fix for mobile browser address bar appearing disappearing */
+  height: 100vh; /* fix for mobile browser address bar appearing disappearing */
   left: 0;
   right: 0;
-  z-index: -1;
-  /* needed to keep in the background */
+  z-index: -1; /* needed to keep in the background */
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.4))), url("../img/himtnbg.jpg") center center;
   background: linear-gradient(rgba(47, 23, 15, 0.4)), url("../img/himtnbg.jpg") center center;
   background-size: cover;
@@ -106,22 +89,18 @@ body::after {
 
 #mainNav {
   background-color: rgba(47, 23, 15, 0.9);
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
-
 #mainNav .navbar-brand {
   color: #e6a756;
 }
-
 #mainNav .navbar-nav .nav-item .nav-link {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 800;
 }
-
 #mainNav .navbar-nav .nav-item.active .nav-link {
   color: #e6a756;
 }
-
 @media (min-width: 992px) {
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 0.9rem;
@@ -146,18 +125,17 @@ body::after {
 .intro {
   position: relative;
 }
-
 @media (min-width: 992px) {
   .intro .shake-img {
     float: right;
     width: 30% !important;
-    opacity: .5 !important;
+    opacity: 0.5 !important;
   }
   .intro .intro-img {
     width: 60%;
     float: right;
     margin-top: 8rem;
-    opacity: .9;
+    opacity: 0.9;
   }
   .intro .intro-text {
     left: 0;
@@ -172,7 +150,6 @@ body::after {
     bottom: -2rem;
   }
 }
-
 @media (min-width: 1200px) {
   .intro .intro-text {
     width: 55%;
@@ -184,17 +161,15 @@ body::after {
   padding-bottom: 5rem;
   background-color: rgba(230, 167, 86, 0.9);
 }
-
 .cta .cta-inner {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0.85);
 }
-
 .cta .cta-inner:before {
   border-radius: 0.5rem;
-  content: '';
+  content: "";
   position: absolute;
   top: -0.5rem;
   bottom: -0.5rem;
@@ -237,19 +212,16 @@ body::after {
 .list-hours {
   font-size: 0.9rem;
 }
-
 .list-hours .list-hours-item {
   border-bottom: 1px solid rgba(230, 167, 86, 0.5);
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
   margin-bottom: 1rem;
   font-style: italic;
 }
-
 .list-hours .list-hours-item.today {
   font-weight: bold;
   color: #e6a756;
 }
-
 @media (min-width: 992px) {
   .list-hours {
     width: 50%;
@@ -286,7 +258,6 @@ body::after {
   background-color: #e6a756;
   border-color: #e6a756;
 }
-
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #df902a;
   border-color: #df902a;
