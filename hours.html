@@ -190,9 +190,6 @@
 <!-- Script to highlight the active date in the hours list -->
 <script>
   let todaysDate = new Date();
-  console.log(todaysDate);
-  console.log(todaysDate.getUTCHours() < 17)
-  console.log(todaysDate.getUTCHours() < 22)
 
   $(".list-hours li").eq(todaysDate.getDay()).addClass("today");
 
