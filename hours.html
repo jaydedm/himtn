@@ -194,19 +194,20 @@
   $(".list-hours li").eq(todaysDate.getDay()).addClass("today");
 
   function isStoreOpen() {
-    const isMondayOrTuesday= todaysDate.getDay() > 0 && todaysDate.getDay() <= 2;
+    const isMondayOrTuesday= todaysDate.getDay() === 1 || todaysDate.getDay() === 2;
+    const currentTime = todaysDate.getUTCHours();
     if (isMondayOrTuesday){
-        return todaysDate.getUTCHours() > 17 || todaysDate.getUTCHours() < 22
+        return currentTime > 17 && currentTime < 22
     } else if (todaysDate.getDay() !== 0) {
-        return todaysDate.getUTCHours() > 17 || todaysDate.getUTCHours() < 2
+        return currentTime > 17 || currentTime < 2
     } else return false;
   }
 
-  if (isStoreOpen) {
+  if (isStoreOpen()) {
     $(".closed-sign").addClass("hide");
     $(".open-sign").removeClass("hide");
   }
-  if (!isStoreOpen) {
+  if (!isStoreOpen()) {
     $(".open-sign").addClass("hide");
     $(".closed-sign").removeClass("hide");
   }
