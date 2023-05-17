@@ -193,11 +193,14 @@
 
   $(".list-hours li").eq(todaysDate.getDay()).addClass("today");
 
+
+
+
   function isStoreOpen() {
     const isMondayOrTuesday= todaysDate.getDay() === 1 || todaysDate.getDay() === 2;
     const currentTime = todaysDate.getUTCHours();
     if (isMondayOrTuesday){
-        return currentTime > 17 && currentTime < 22
+        return 17 < currentTime > 22;
     } else if (todaysDate.getDay() !== 0) {
         return currentTime > 17 || currentTime < 2
     } else return false;
