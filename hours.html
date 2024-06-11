@@ -62,7 +62,7 @@
             </a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="img/Menu/himtnmenu.pdf" download="">Menu</a>
+            <a class="nav-link text-uppercase text-expanded" href="img/Menu/HiMtnMenuJune2024.pdf" download="">Menu</a>
           </li>
           <li class="nav-item active px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="hours">Hours</a>
@@ -102,11 +102,11 @@
               </li>
               <li class="list-unstyled-item list-hours-item d-flex">
                 Monday
-                <span class="ml-auto">11:00 AM to 4:00 PM</span>
+                <span class="ml-auto">Closed</span>
               </li>
               <li class="list-unstyled-item list-hours-item d-flex">
                 Tuesday
-                <span class="ml-auto">11:00 AM to 4:00 PM</span>
+                <span class="ml-auto">Closed</span>
               </li>
               <li class="list-unstyled-item list-hours-item d-flex">
                 Wednesday
@@ -194,10 +194,10 @@
   $(".list-hours li").eq(todaysDate.getDay()).addClass("today");
 
   function isStoreOpen() {
-    const isMondayOrTuesday= todaysDate.getDay() === 1 || todaysDate.getDay() === 2;
+    const isMondayOrTuesdayOrWednesday= todaysDate.getDay() === 1 || todaysDate.getDay() === 2  || todaysDate.getDay() === 3;
     const currentTime = todaysDate.getUTCHours();
     console.log('current time: ', currentTime)
-    if (isMondayOrTuesday){
+    if (isMondayOrTuesdayOrWednesday){
         return 17 <= currentTime > 22;
     } else if (todaysDate.getDay() !== 0) {
         return currentTime >= 17 || currentTime < 1
