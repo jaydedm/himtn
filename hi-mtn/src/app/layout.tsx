@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '../../../css/business-casual.min.css'
+
 import BootstrapClient from './BootstrapClient'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -44,10 +46,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Navigation/>
-        {children}
         <BootstrapClient />
-        <Footer/>
+        <Navigation />
+        {children}
+        <Footer />
       </body>
     </html>
   )
