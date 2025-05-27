@@ -1,48 +1,37 @@
-"use client"
+"use client";
 
-import { useEffect } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import Collapse from "bootstrap/js/dist/collapse"
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navigation() {
-  const pathName = usePathname()
+  const pathname = usePathname();
 
-  // whenever the path changes, hide the open menu
-  useEffect(() => {
-    const elt = document.getElementById("navbarResponsive")
-    if (elt) {
-      // get or create the Collapse instance
+  const handleNavLinkClick = async () => {
+    const { default: Collapse } = await import(
+      "bootstrap/js/dist/collapse"
+    );
+    const navEl = document.getElementById("navbarResponsive");
+    if (navEl) {
       const bsCollapse =
-        // @ts-ignore: Collapse.getOrCreateInstance may not be typed
-        Collapse.getOrCreateInstance(elt, { toggle: false })
-      bsCollapse.hide()
+        Collapse.getInstance(navEl) || new Collapse(navEl, { toggle: false });
+      bsCollapse.hide();
     }
-  }, [pathName])
+  };
 
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark py-lg-4"
+      className="navbar navbar-expand-lg navbar-dark py-lg-4 fixed-top"
       id="mainNav"
-      style={{
-        position: "fixed",
-        top: 0,
-        width: "100%",
-        zIndex: 2,
-      }}
+      style={{ zIndex: 2 }}
     >
       <div className="container">
-        <a
-          className="
-            navbar-brand
-            text-uppercase text-expanded
-            font-weight-bold
-            d-lg-none
-          "
-          href="index.html"
+        <Link
+          href="/"
+          className="navbar-brand d-lg-none text-uppercase font-weight-bold"
+          onClick={handleNavLinkClick}
         >
           Hi-Mountain
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -52,46 +41,42 @@ export default function Navigation() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" />
         </button>
+
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav mx-auto">
-            <li
-              className={`nav-item ${
-                pathName === "/" ? "active" : ""
-              } px-lg-4`}
-            >
-              <Link
-                className="nav-link text-uppercase text-expanded"
-                href="/"
-              >
-                Home
-              </Link>
-            </li>
+            {[
+              { href: "/", label: "Home" },
+              { href: "/hours", label: "Hours" },
+            ].map((item) => (
+              <li key={item.href} className="nav-item px-lg-4">
+                <Link
+                  href={item.href}
+                  className={
+                    "nav-link text-uppercase text-expanded" +
+                    (pathname === item.href ? " active" : "")
+                  }
+                  onClick={handleNavLinkClick}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+
             <li className="nav-item px-lg-4">
               <a
                 className="nav-link text-uppercase text-expanded"
                 href="img/Menu/HiMtnMenuJune2024.pdf"
                 download
+                onClick={handleNavLinkClick}
               >
                 Menu
               </a>
-            </li>
-            <li
-              className={`nav-item ${
-                pathName === "/hours" ? "active" : ""
-              } px-lg-4`}
-            >
-              <Link
-                className="nav-link text-uppercase text-expanded"
-                href="/hours"
-              >
-                Hours
-              </Link>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  )
+  );
 }

@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../../css/business-casual.min.css'
+import Script from "next/script";
 
-import BootstrapClient from './BootstrapClient'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -44,9 +44,12 @@ export default function RootLayout({
           href='https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i'
           rel='stylesheet'
         />
+        <Script
+          src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'
+          strategy='afterInteractive'
+        />
       </head>
       <body>
-        <BootstrapClient />
         <Navigation />
         {children}
         <Footer />
