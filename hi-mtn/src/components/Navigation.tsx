@@ -1,21 +1,11 @@
 'use client'
 
-import useScrollDownFast from '@/utils/hooks/useScrollDownFast'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useEffect } from 'react'
 
 
 export default function Navigation() {
-
   const pathName = usePathname();
-
-  const scrollingDownFast = useScrollDownFast()
-
-  useEffect(() => {
-    console.log(scrollingDownFast)
-  }, [scrollingDownFast])
-
 
   return (
     <nav
